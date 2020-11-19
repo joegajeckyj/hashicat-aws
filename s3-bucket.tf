@@ -3,7 +3,6 @@ module "s3_bucket" {
   version = "1.16.0"
 
   acceleration_status = "Enabled"
-  bucket = "joeg"
-  bucket_prefix = "test"
+  bucket_prefix = var.prefix
   request_payer = "BucketOwner"
 }
